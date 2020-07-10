@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#CCCCFF">
+  <form action="Sharebook.html" method="POST" target="_blank">
+    <h1>Add Books</h1>
+    <script>
+      window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+    if (this.files && this.files[0]) {
+      var img = document.querySelector('img'); // $('img')[0]
+      img.src = URL.createObjectURL(this.files[0]); // set src to file url
+    }
+  });
+});
+    </script>
+    <input type='file' />
+<br>
+<img id="myImg" src="#" alt="your image" width="400" height="400">
+   <input type="text" placeholder="Decription about the book" required></p><br>
+    <div class="button">
+    <button class="button">Share</button>
+    </div>
+  </form>
+</body>
+</html>
+<style>
+  h2{font-family:High Tower Text; font-weight: bold; text-align: center; color: Green; font-size: 40;}
+</style>
+<style>
+   h1{font-family:Jokerman; font-weight: bold; color: black; text-align: center;}
+        input[type=text], select {
+            font-family: Segoe UI; font-weight: bold;
+            width:100%;
+            padding:40px 20px;
+            margin:8px 0;
+            display: inline-block;
+            border: 1 px solid #ccc;
+            border-style: groove;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+</style>
+<style>
+  button{
+    width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size:16px;
+            font-weight:bold;
+        }
+
+  }
+</style>
